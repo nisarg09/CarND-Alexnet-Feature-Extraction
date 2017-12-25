@@ -58,7 +58,7 @@ def eval_on_data(X,y,sess):
         total_loss += (loss * X_batch.shape[0])
         total_acc += (acc * X_batch.shape[0])
 
-    return total_loss/X.shape[0], total_acc/X_shape[0]
+    return total_loss/X.shape[0], total_acc/X.shape[0]
 
 
 with  tf.Session() as sess:
